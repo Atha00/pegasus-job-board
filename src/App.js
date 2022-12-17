@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Jobs from "./components/Jobs";
 
 function App() {
+  const bool = true;
+  // if (bool === true) {
+  //   console.log("bool est true");
+  // } else {
+  //   console.log("bool est false");
+  // }
+
+  bool === true ? console.log("bool est true") : console.log("bool est false");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Jobs />
+      <Footer />
     </div>
   );
 }

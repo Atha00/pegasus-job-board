@@ -1,38 +1,67 @@
-.App {
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"); */
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+header {
+  height: 100px;
+  background-color: #333333;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+h1 {
+  font-size: 40px;
   text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-size: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.red {
+  border: 5px solid red;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.green {
+  border: 5px solid green;
+}
+.yellow {
+  border: 5px solid yellow;
+}
+.blue {
+  border: 5px solid blue;
+}
+.pink {
+  border: 5px solid pink;
+}
+.jobs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.job-square {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.job-square-bottom {
+  display: flex;
+}
+.job-square-bottom > p {
+  margin-right: 5px;
+}
+footer {
+  height: 60px;
+  background-color: #dddddd;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer > p {
+  text-align: center;
 }
